@@ -32,7 +32,7 @@ Sharding-Jdbc(Shardingsphere)多数据库与springboot集成
 
 
 ### properties 配置
-以order和orderHis两数据源为例，数据库连接池采用HikariDataSource
+以order和orderHis两数据库为例，数据库连接池采用HikariDataSource
 
 ```
 spring.ydal.props.sql.show=true
