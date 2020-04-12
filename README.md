@@ -1,8 +1,5 @@
 # ydal-spring-boot-starter
-Shardingsphere(Sharding-jdbc)多数据与springboot集成
-
-## 主要扩展功能
-* springboot集成多数据源
+Sharding-Jdbc(Shardingsphere)多数据库与springboot集成
 
 ## Quick Start
 
