@@ -1,0 +1,5 @@
+# AutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  name.yzhu.ydal.config.DalAutoConfiguration
+org.springframework.boot.autoconfigure.AutoConfigurationImportFilter=\
+  name.yzhu.ydal.config.DalAutoConfigurationImportFilter
