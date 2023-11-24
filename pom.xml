@@ -6,10 +6,11 @@
 
   <groupId>name.yzhu.ydal</groupId>
   <artifactId>ydal-spring-boot-starter</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring.boot.version>2.7.11</spring.boot.version>
     <jdk.version>1.8</jdk.version>
   </properties>
 
@@ -23,16 +24,30 @@
     </dependency>
 
     <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.32</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-actuator-autoconfigure</artifactId>
-      <version>2.7.11</version>
+      <version>${spring.boot.version}</version>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-aop</artifactId>
-      <version>2.1.6.RELEASE</version>
+      <version>${spring.boot.version}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.zaxxer</groupId>
+      <artifactId>HikariCP</artifactId>
+      <version>3.2.0</version>
       <scope>provided</scope>
     </dependency>
 
@@ -40,6 +55,13 @@
       <groupId>org.apache.shardingsphere</groupId>
       <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
       <version>4.0.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.micrometer</groupId>
+      <artifactId>micrometer-core</artifactId>
+      <version>1.11.0</version>
+      <scope>provided</scope>
     </dependency>
 
   </dependencies>
